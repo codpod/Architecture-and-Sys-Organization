@@ -1,3 +1,5 @@
+Read 32-bit HEX representations of IEEE-754 Floating Point Numbers, decode them, and print their componenets.
+
 A single-file application that will read zero or more 32-bit hex values and then print a detailed description of the floating 
 point value that they represent by extracting and showing the sign, exponent, and significand from the 32-bit value.
 

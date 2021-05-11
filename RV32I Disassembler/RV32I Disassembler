@@ -1,0 +1,17 @@
+Abstract:
+Loads and disassembles a binary RV32I executable file.
+This is the second of a multi-part project involving the creation of a machine capable of executing programs compiled with g++.  
+The purpose of this part is to gain a thorough understanding of the RV32I instruction set
+
+Description:
+Disassemble an executable binary file by loading it into a simulated memory of sufficient size and then decode each 32-bit instruction 
+one-at-a-time starting from address zero and continue throughto the end of the simulated memory.
+
+Files: 
+main.cpp:    main() and usage() function definitions found here.
+hex.h:       Declaration of hex formatting class found here.
+hex.cpp:     Definitions of hex class member functions found here.
+memory.h:    Definition of memory class found here.
+memory.cpp:  Memory class member function definitions found here.
+rv32i.h:     The definition of a class named rv32i found here.
+rv32i.cpp:   The definitions of any member functions of class rv32i found here.

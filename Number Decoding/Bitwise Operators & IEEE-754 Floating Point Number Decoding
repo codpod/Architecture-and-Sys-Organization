@@ -1,0 +1,12 @@
+A single-file application that will read zero or more 32-bit hex values and then print a detailed description of the floating 
+point value that they represent by extracting and showing the sign, exponent, and significand from the 32-bit value.
+
+ For each input value, the five output lines printed are:
+
+    The first line displays the input value as a 32-bit hex value and again in binary (in groups of 4-bits.)
+    The sign bit is zero. (Therefore the floating point value is positive.)
+    The exponenet is zero (seen printed as a 32-bit signed integer and as a signed decimal value in parenthesis.)
+    The significand is printed as a 32-bit unsigned hex value. In this case it is zero.
+    The full value of the number is printed last in binary.
+
+Positive infinity must be displayed like this: +inf and -inf

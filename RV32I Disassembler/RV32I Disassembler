@@ -15,3 +15,4 @@ memory.h:    Definition of memory class found here.
 memory.cpp:  Memory class member function definitions found here.
 rv32i.h:     The definition of a class named rv32i found here.
 rv32i.cpp:   The definitions of any member functions of class rv32i found here.
+bin files used when running/testing program

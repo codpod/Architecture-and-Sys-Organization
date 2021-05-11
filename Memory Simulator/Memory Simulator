@@ -1,0 +1,16 @@
+A C++ program to simulate a computer system memory.  This is the first of a multi-part project concluding with a simple computing machine capable of 
+executing  real  programs  compiled  with g++.   The  purpose  is  to  gain  an  understanding  of  a machine,  its  instruction  set  and  how  its 
+features  are  used  by  realistic  programs  written  in C/C++
+
+To simulate a computer system’s memory, create a class to represent a memory whose size is defined at run-time via command-line argument. 
+Memory class will include utility member functions to load it by reading a binary file, print its contents with a hex dump, a method to determine if a given address is legal, 
+and methods that allow a caller to read or write 8, 16 and 32-bit values from (or to) any legal address.
+Program will accept parameters from the command line, read data from a file and print all of its non-error output to standard out (aka stdout) via std::cout and usage or 
+file loading error messages to standard error (aka stderr) via std::cerr. 
+
+FILES:
+main.cpp: main() and usage() function definitions found here.
+hex.h: declarations of hex formatting class found here.
+hex.cpp: definitions of hex class member functions found here.
+memory.h: definition of memory class found here.
+memory.cpp: memory class member function definitions found here.

@@ -19,11 +19,11 @@
 /****************************************************************
 * The memory constructor saves siz argument in the size member  *
 * variable the allocates siz bytes for the mem array and        *
-* initializes every byte to 0xa5			       				*
-*							    							    *
+* initializes every byte to 0xa5			       	*
+*							    	*
 * @param siz is an unsigned int that is a 32bit member var      *
-*																*
-* @return memory constructor returns nothing					*
+*								*
+* @return memory constructor returns nothing			*
 ****************************************************************/
 memory::memory(uint32_t siz)
 {
@@ -39,11 +39,11 @@ memory::memory(uint32_t siz)
 
 /****************************************************************
 * The memory destructors frees memory that was allocated in the *
-* constructor to represent the simulated memory					*
+* constructor to represent the simulated memory			*
 *                                                               *
-* @param has no params											*
+* @param has no params						*
 *                                                               *
-* @return returns nothing										*
+* @return returns nothing					*
 ****************************************************************/
 memory::~memory()
 {
@@ -52,10 +52,10 @@ memory::~memory()
 
 /****************************************************************
 * Function check_address returns true if given address is in	*
-* the simulated memory. If not, it shows user a warning and		*
-* returns false.												*
+* the simulated memory. If not, it shows user a warning and	*
+* returns false.						*
 *                                                               *
-* @param an unsigned int i 										*
+* @param an unsigned int i 					*
 *                                                               *
 * @return check address returns bool true or false accordingly	*
 ****************************************************************/
@@ -68,11 +68,11 @@ bool memory::check_address(uint32_t i) const
 	return false;
 }
 /****************************************************************
-* Function get_size returns the siz value						*
+* Function get_size returns the siz value			*
 *                                                               *
-* @param none													*
+* @param none							*
 *                                                               *
-* @return size which is a unsigned int							*
+* @return size which is a unsigned int				*
 ****************************************************************/
 uint32_t memory::get_size() const
 {
@@ -80,11 +80,11 @@ uint32_t memory::get_size() const
 }
 
 /****************************************************************
-* Function get8 checks if given addr is in mem by calling		*
+* Function get8 checks if given addr is in mem by calling	*
 * check_address. returns value of byte in simulated memory at	*
-* appropriate address if addr is in valid range.				*
+* appropriate address if addr is in valid range.		*
 *                                                               *
-* @param addr which is the byte value of an address 			*
+* @param addr which is the byte value of an address 		*
 *                                                               *
 * @return addr which is an unsigned int or 0 if invalid address *
 ****************************************************************/
@@ -99,11 +99,11 @@ uint8_t memory::get8(uint32_t addr) const
 /****************************************************************
 * Function get16 calls get8 function twice to get two bytes and	*
 * combine them in little-endian order to create a 16 bit return	*
-* value.														*
+* value.							*
 *                                                               *
-* @param addr which represents bits of an address				*
-*                                                               *
-* @return a 16 bit unsigned int									*
+* @param addr which represents bits of an address		*
+*                                                               * 
+* @return a 16 bit unsigned int					*
 ****************************************************************/
 uint16_t memory::get16(uint32_t addr) const
 {
@@ -111,12 +111,12 @@ uint16_t memory::get16(uint32_t addr) const
 }
 
 /****************************************************************
-* Function get32 calls get16 twice and combines results in		*
-* litte-endian order similar to get16							*
+* Function get32 calls get16 twice and combines results in	*
+* litte-endian order similar to get16				*
 *                                                               *
-* @param addr, bytes of address									*
+* @param addr, bytes of address					*
 *                                                               *
-* @return 32 bit unsigned integer								*
+* @return 32 bit unsigned integer				*
 ****************************************************************/
 uint32_t memory::get32(uint32_t addr) const
 {
@@ -126,12 +126,12 @@ uint32_t memory::get32(uint32_t addr) const
 /****************************************************************
 * Function set8 calls checks addres to verify if addr argument	*
 * is valid. If it is, byte in simulated memory at that address	*
-* is set to the given val. If not, discard the data. 			*
+* is set to the given val. If not, discard the data. 		*
 *                                                               *
-* @param 32bit unsigned int addr								*
-*	 8bit unsigned int val										*
+* @param 32bit unsigned int addr				*
+*	 8bit unsigned int val					*
 *                                                               *
-* @return void													*
+* @return void							*
 ****************************************************************/
 void memory::set8(uint32_t addr, uint8_t val)
 {
@@ -144,12 +144,12 @@ void memory::set8(uint32_t addr, uint8_t val)
 /****************************************************************
 * Function set16 calls set8 twice to store given val in little-	*
 * endian order into simulated memory starting at address given	*
-* in the addr argument											*
+* in the addr argument						*
 *                                                               *
-* @param 32bit unsigned int addr								*
-* 	 16bit unisnged int val										*
+* @param 32bit unsigned int addr				*
+* 	 16bit unisnged int val					*
 *                                                               *
-* @return void													*
+* @return void							*
 ****************************************************************/
 void memory::set16(uint32_t addr, uint16_t val)
 {
@@ -160,12 +160,12 @@ void memory::set16(uint32_t addr, uint16_t val)
 /****************************************************************
 * Function set32 calls set16 twice to store given val in little-*
 * endian order into the simulated memory starting at address	*
-* given in the addr argument									*
+* given in the addr argument					*
 *                                                               *
-* @param 32bit unisgned int addr								*
-*        32bit unsigned int val									*
+* @param 32bit unisgned int addr				*
+*        32bit unsigned int val					*
 *                                                               *
-* @return void													*
+* @return void							*
 ****************************************************************/
 void memory::set32(uint32_t addr, uint32_t val)
 {
@@ -175,11 +175,11 @@ void memory::set32(uint32_t addr, uint32_t val)
 
 /****************************************************************
 * Function dump dumps entire contents of simulated memory in hex*
-* with ASCII on the right. Prints out the virtual memory		*
+* with ASCII on the right. Prints out the virtual memory	*
 *                                                               *
-* @param none													*
+* @param none							*
 *                                                               *
-* @return void													*
+* @return void							*
 ****************************************************************/
 void memory::dump() const
 {
@@ -205,9 +205,9 @@ void memory::dump() const
 
 /****************************************************************
 * Function load_file opens file named fname in binary mode and	*
-* reads its contents into the simulated memory					*
+* reads its contents into the simulated memory			*
 *                                                               *
-* @param file fname which is a string							*
+* @param file fname which is a string				*
 *                                                               *
 * @return boolean value. false when theres errors otherwise true*
 ****************************************************************/
